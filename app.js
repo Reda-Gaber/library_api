@@ -2,6 +2,9 @@ const express = require("express");
 const path = require("path");
 const homeRoute = require("./routes/web/home.route")
 const apiBooks = require("./routes/api/books.api")
+const cors = require("cors");
+app.use(cors());
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;
