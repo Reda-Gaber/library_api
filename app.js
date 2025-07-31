@@ -4,7 +4,7 @@ const homeRoute = require("./routes/web/home.route")
 const apiBooks = require("./routes/api/books.api")
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname, "views")));
